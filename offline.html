@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest | Visita</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Esto es una aplicacion de Metrowest" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Visita" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion provee acceso a los registros, documentos y programas de la congregacion">
+  <meta property="og:title" content="Metrowest Spanish">
+  <meta property="og:url" content="https://metrowest.github.io/Visita/">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/Visita/main/public/assets/icons/og-image.jpg">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Metrowest | Visita">
+  <meta name="application-name" content="Metrowest | Visita">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+  <!--offline styles-->
+  <style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    body {
+      max-height: -moz-fit-content;
+      max-height: fit-content;
+    }
+
+    .containerd {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      line-height: 1.3;
+      background-color: #ffebd3;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .container {
+      margin-left: auto;
+      max-width: 500px;
+      line-height: 1.3;
+      background-color: #ffebd3;
+      padding: 30px;
+      margin-right: auto;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .img4 {
+      height: 50px;
+      display: flex;
+      margin-left: 10px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .img9 {
+      height: 200px;
+      margin: auto;
+      display: flex;
+      border-radius: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px
+    }
+
+    h2 {
+      text-align: center
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 30px
+    }
+
+    #section-header11 {
+      font-weight: 700;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      background: linear-gradient(-135deg, #f0cca8, #8f6942);
+      box-shadow: 0 0 3px 1px;
+      border-radius: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      max-height: -moz-fit-content;
+      max-height: fit-content;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      padding: 10px;
+    }
+
+    #section-header11:hover {
+      background: linear-gradient(-135deg, #8f6942, #f0cca8);
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: .5rem;
+      font-size: 1.5rem;
+      background-color: rgb(99 48 0);
+      border-radius: 10px;
+      color: white;
+    }
+
+    button:hover {
+      background-color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li>
+        <a href="desastre.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+          Plan Ante Un<br>Desastre Natural
+        </a>
+      </li>
+      <li>
+        <a href="salon.html">
+          <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+          Plan De Seguridad<br>Del Salón Del Reino
+        </a>
+      </li>
+      <li><a href="contactos.html"><i><img title="contactos" class="img6"
+              src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest Spanish</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header11">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Metrowest Security Guide<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <h1>Unidos por amor a Jehová, trabajando por la congregación.
+      </h1>
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+
+      <div class="wrapper">
+        <h1>Ooops, parece que perdió su conexión a internet.</h1>
+        <h2>Por favor verifique y trate de nuevo</h2>
+        <h3>Sinceramente, cuerpo de ancianos</h3>
+      </div>
+      <div class="containerd">
+        <button type="button" onClick="window.location.reload();">
+          Refresh Page
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top arow button on body -->
+  <div class="button">
+    <a href="#top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- Top arow button on body -->
+
+  <!--my scripts-->
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/GPS/sw.js',
+        { scope: '/GPS/' }
+      )
+    }
+  </script>
+  <!--SW-->
+
+</body>
+
+</html>
