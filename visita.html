@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest | Visita</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Esto es una aplicacion de Metrowest" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Visita" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion provee acceso a los registros, documentos y programas de la congregacion">
+  <meta property="og:title" content="Metrowest Spanish">
+  <meta property="og:url" content="https://metrowest.github.io/Visita/">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/Visita/main/public/assets/icons/og-image.jpg">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Metrowest | Visita">
+  <meta name="application-name" content="Metrowest | Visita">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li>
+        <a href="desastre.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+          Plan Ante Un<br>Desastre Natural
+        </a>
+      </li>
+      <li>
+        <a href="salon.html">
+          <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+          Plan De Seguridad<br>Del Salón Del Reino
+        </a>
+      </li>
+      <li><a href="contactos.html"><i><img title="contactos" class="img6"
+              src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest Spanish</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>ARREGLOS PARA LA VISITA<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <div class="containera">
+
+      <img title="logo" src="public/assets/img/Pastoreo2.webp" class="imgLogo2" />
+    </div>
+
+    <div class="containera">
+      <h2>Informes y Programas
+      </h2>
+    </div>
+    <div class="buttons-area">
+
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1oxg5uBF68BqcMQZ_nP5uGieP6tulRoPe?usp=sharing', '_blank');">
+        <img title="biblia2" class="img2" src="public/assets/img/biblia2.webp">Ultima visita
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1vM_n6IMVJXeeVgOqgdpTpDlhaBDbazB8?usp=share_link', '_blank');">
+        <img title="lupa" class="img2" src="public/assets/img/lupa.webp">Programas
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1r8IJAJkDbaFMKgK1XH3Lpv6QNMT3Whyi?usp=sharing', '_blank');">
+        <img title="precursor5" class="img2" src="public/assets/img/precursor5.png">Predicación
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/10KxArSEF70NeLYUhRnEe2jh0HIoRZ3Lx?usp=sharing', '_blank');">
+        <img title="cuentas" class="img2" src="public/assets/img/cuentas.webp">Cuentas
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1P4ibJsjSGJPf8D-pTLI3La05W_mELQOY?usp=sharing', '_blank');">
+        <img title="libros" class="img2" src="public/assets/img/libros.webp">Literatura
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1gvPjCAWlWxRIvn7v2awVrRYBwcRbvH2N?usp=sharing', '_blank');">
+        <img title="libros" class="img2" src="public/assets/img/registros2.webp">Territorios<br>Disponible<br>
+      </button>
+    </div><br><br>
+    <div class="containera">
+      <h2>Recomendaciones
+      </h2>
+
+    </div>
+    <div class="buttons-area">
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1dEb0uQzd-Sd0VCQNJkGkQDeTziLQvD5l?usp=sharing', '_blank');">
+        <img title="header1" class="img2" src="public/assets/img/header1.webp">Ancianos
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1P1pjxDXWEC0DvRUX8_rTi5HWTI8Y7VgJ?usp=sharing', '_blank');">
+        <img title="acomodador2" class="img2" src="public/assets/img/acomodador2.webp">Ministeriales
+      </button>
+    </div><br><br>
+
+    <div class="containera">
+      <h2>Otros asuntos
+      </h2>
+    </div>
+    <div class="buttons-area">
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1F5WWovOAiaoBmMoRi4P0GYvC8CcQrpBP?usp=sharing', '_blank');">
+        <img title="header1" class="img2" src="public/assets/img/file.webp">Datos
+      </button>
+    </div><br><br>
+
+    <P1 id="Tabla"></P1>
+    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
+    <h2>Pastoreo, estudios y revisitas
+    </h2>
+
+    <div class="table-responsive" id="no-more-tables">
+
+      <table class="table bg-white">
+
+        <thead class="bg-dark text-light">
+          <tr>
+            <th>Dia y Hora</th>
+            <th>Hno. Gascón<br>Acompañante</th>
+            <th>Hna. Gascon<br>Acompañante</th>
+            <th>Hogar y<br> Detalles</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td data-title="Dia">Viernes<br>10:30am</td>
+            <td data-title="Acompañante Hno.">David Hernandez<br>(408) 501-9418</td>
+            <td data-title="Acompañante Hna.">N/A</td>
+            <td><a class="button" href="#popup1">Eloisa Barrios</a></td>
+          </tr>
+
+          <tr>
+            <td data-title="Dia">Viernes<br>1:15pm</td>
+            <td data-title="Acompañante Hno.">Walter Figueroa<br>(407) 617-3880</td>
+            <td data-title="Acompañante Hna.">N/A</td>
+            <td><a class="button" href="#popup2">La familia Reyes</a></td>
+          </tr>
+
+          <tr>
+            <td data-title="Dia">Viernes<br>1:15pm</td>
+            <td data-title="Acompañante Hno.">N/A<br></td>
+            <td data-title="Acompañante Hna.">Hna. Berlin Pérez<br>(315) 941-1265</td>
+            <td><a class="button" href="#popup3">Estudiante</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div><br><br>
+
+    <div id="popup1" class="overlay">
+      <div class="popup"><a class="close" href="#Tabla">&times;</a>
+        <h2>Eloisa Barrios</h2>
+
+        <div class="content">
+          <p>
+            Dirección:<br>
+            1131 Holden Ave<br>
+            Orlando, Fl 32833<br>
+            Eloisa: (407) 779-1515
+          </p>
+          <p>
+            Es una hermana sola que ha servido como precursora regular por
+            23 años (desde 1 de septiembre de 1999).<br><br>Cuenta con 88 años y sufre de problemas
+            de salud. Aun asi se ha mantenido fiel y continua con su precursorado.
+          </p>
+          <p>
+            Objetivo: encomio
+          </p>
+          <p>
+            La reunio sera por zoom:<br>ID: 843 9439 7484<br>PW: 195522
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2>La familia Reyes</h2>
+        <a class="close" href="#Tabla">&times;</a>
+        <div class="content">
+          <p>
+            Dirección:<br>
+            5578 Metrowest Blvd<br>
+            Apt 211,<br>
+            Orlando, FL 32811<br>
+            Francisco: (787) 467-1596
+          </p>
+          <p>
+            La familia Reyes se compone de Francisco y Olga. Fransico sirvio en el pasado como
+            siervo ministerial pero entrego su privilegio debido a los problemas de salud de su
+            esposa Olga.
+          </p>
+          <p>
+            Por otro lado Olga es sobreviviente de cancer, hasta hace poco se vio bastante
+            delicada de salud.<br><br>Ambos han sido fieles a Jehová a pesar de sus dificultades.
+          </p>
+          <p>
+            Objetivo: estimulo y animo
+          </p>
+          <p>
+            La reunio sera por zoom:<br>ID: 843 9439 7484<br>PW: 195522
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup3" class="overlay">
+      <div class="popup">
+        <h2>Estudiante:<br>Johana Ramírez</h2>
+        <a class="close" href="#Tabla">&times;</a>
+        <div class="content">
+          <p>
+            Direccion:<br>5201 Lobelia Dr.<br>
+            Orlando, FL 32811
+          </p>
+          <p>
+            Publicación:<br>Disfrute<br>
+            Capítulo 10
+          </p>
+          <p>
+            Fue a la conmemoración invitada por una tía desde Venezuela.
+            Al terminal la reunión la Hna. Pérez le dio transportación y por
+            el camino hicieron arreglos para comenzar el estudio.
+          </p>
+          <p>
+            La reunio sera por zoom:<br>ID: 843 9439 7484<br>PW: 195522
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="containera">
+      <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
+          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+      <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    </div>
+
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
+
+    <!-- Top arow button on body -->
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Top arow button on body -->
+
+  </section>
+
+  <!--my scripts-->
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+</body>
+
+</html>
