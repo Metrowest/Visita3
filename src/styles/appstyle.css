@@ -21,7 +21,8 @@ body {
 .header {
     text-align: center;
     color: white;
-    background: #a8835d;;
+    background: #a8835d;
+    ;
 }
 
 .header a {
@@ -30,7 +31,7 @@ body {
     font-size: 48px;
     text-decoration: none;
     color: white;
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
 .header p {
@@ -111,7 +112,7 @@ body {
 
 .content3 {
     display: flex;
-  }
+}
 
 img {
     max-width: 100%;
@@ -170,7 +171,6 @@ img {
     max-width: 200px;
     display: block;
     float: left;
-    margin-right: 20px;
     min-width: 125px
 }
 
@@ -258,7 +258,7 @@ img {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 #0e1a18;
-    background: linear-gradient(-135deg,#f0cca8 ,#8f6942 );
+    background: linear-gradient(-135deg, #f0cca8, #8f6942);
 }
 
 p {
@@ -381,7 +381,7 @@ table#myTable {
     padding: 5px;
     position: relative;
     overflow-y: scroll !important;
-    max-height: 350px;
+    max-height: 250px;
 }
 
 .table.bg-white {
@@ -405,7 +405,7 @@ td {
 
 #Reunion {
     height: 40px;
-  }
+}
 
 #loader {
     border: 16px solid #f7ff32;
@@ -525,7 +525,7 @@ select {
     color: rgb(0, 0, 0);
 }
 
-input[type="SUBMIT"]{
+input[type="SUBMIT"] {
 
     background-color: #633000;
     color: #fff;
@@ -649,7 +649,7 @@ input[type="SUBMIT"]{
     margin-right: 10px;
     margin-top: 30px;
     width: 150px;
-    background-color: #91c7ec;
+    background-color: #c6a98b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -811,16 +811,6 @@ input#nombre {
     border-bottom: 2px solid #005691;
 }
 
-  /*--Tabla myTabla-Buscar--*/
-input#srchID {
-    display: none;
-}
-
-.louder-area {
-    display: none;
-  }
-  /*--Tabla myTabla-Buscar--*/
-
 .flechasRoja {
     background-color: red;
     font-size: 24px;
@@ -969,179 +959,22 @@ input#srchID {
 }
 
 /*-- Top arow button on style --*/
-.button a{
+.button a {
     position: fixed;
     bottom: 20px;
     right: 20px;
     color: #fff;
     background: #633000;
-    padding: 7px 12px;;
+    padding: 7px 12px;
+    ;
     font-size: 18px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15);
-  }
+}
 
 /*-- Login --*/
-  iframe {
+iframe {
     border: none;
     width: 100%;
     height: 350px;
-}
-
-/*-- pastoreo modal--*/
-.modal-content {
-    margin-top: 100px;
-}
-
-/*-- horario auxiliar--*/
-#no-more-tables1 {
-    max-width: 100%;
-    min-width: 200px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    text-align: center;
-}
-
-#no-more-tables1 td {
-    background-color: #ffe2c6;
-    color: #000;
-    text-align: center;
-    margin: auto;
-}
-
-#no-more-tables1 th {
-    text-align: center;
-}
-
-#no-more-tables1 tr {
-    background-color: #03468c;
-    color: #fff;
-}
-
-.no-more-tables1 tbody tr:last-of-type {
-    border-bottom: 2px solid #03468c;
-}
-
-option,
-select {
-    background-color: #95fefe;
-    color: rgb(0, 0, 0);
-}
-
-option,
-select {
-    border-radius: 10px;
-    font-size: 20px;
-    height: 40px;
-    border: none;
-    outline: 0;
-    transition: .3s;
-    text-align: center;
-    margin: 5px;
-    border-bottom: 2px solid #000000;
-}
-
-/*--popup--*/
-.buttong {
-    font-size: 1em;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    border: 2px solid #001428;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    background-color: #f4fc04;
-  }
-
-.buttong:hover {
-    background: #000000;
-    border: 2px solid #020202;
-    color: rgb(255, 255, 255);
-}
-
-.buttonh {
-    font-size: 1em;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    border: 2px solid #001428;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    background-color: #03468c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttonh:hover {
-    background: #070707;
-    border: 2px solid #020202;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.popup {
-    margin: 70px auto;
-
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    border-radius: 50px;
-    overflow-y: scroll !important;
-    max-height: 350px;
-}
-
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-}
-
-.popup .close {
-    position: absolute;
-    top: 0px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-
-.popup .close:hover {
-    color: #061bd8;
-}
-
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
-}
-
-@media screen and (max-width: 700px) {
-    .box {
-        width: 70%;
-    }
-
-    .popup {
-        width: 70%;
-    }
 }
