@@ -200,163 +200,37 @@
     <h2>Pastoreo
     </h2>
 
-    <div class="table-responsive" id="no-more-tables">
-
-      <table class="table bg-white">
-
-        <thead class="bg-dark text-light">
-          <tr>
-            <th>Dia y Hora</th>
-            <th>Hno. Gascón<br>Acompañante</th>
-            <th>Hogar y<br> Detalles</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td data-title="Dia">Miercoles<br>1:15pm</td>
-            <td data-title="Acompañante Hno.">Harold Morales<br>(787) 949-1964</td>
-            <td><a class="button" href="#popup1">Domingo</a></td>
-          </tr>
-
-          <tr>
-            <td data-title="Dia">Viernes<br>1:15pm</td>
-            <td data-title="Acompañante Hno.">Carlos Fajardo<br>(407) 579-8252</td>
-            <td><a class="button" href="#popup2">Familia Cardona</a></td>
-          </tr>
-
-        </tbody>
-      </table>
-    </div><br><br>
-
-    <div id="popup1" class="overlay">
-      <div class="popup"><a class="close" href="#Tabla">&times;</a>
-        <h2>Domingo Rodríguez</h2>
-
-        <div class="content">
-          <p>
-            Dirección:<br>
-            5349 Moonglow Blvd<br>
-            Orlando, FL 32839<br>
-            Domingo: (407) 927-3986
-          </p>
-          <p>
-            El Hno. Rodríguez y su esposa se habían ofrecido la visita pasada par brindarle
-            alimentos a usted y su esposa. Lamentablemente esa misma semana su esposa enferma
-            y la siguiente semana murió.<br><br>
-            Cuenta con 81 años y a pesar de la perdida de su esposa, su eeda y sus problemas de
-            salud se ha mantenido fiel.
-          </p>
-          <p>
-            Objetivo: Animo y estimulo
-          </p>
-
-        </div>
-      </div>
-    </div><br>
-
-
-
-
-
-
-
-
-    <h2>Estudios y revisitas
-    </h2>
-
-    <div class="table-responsive" id="no-more-tables">
-
-      <table class="table bg-white">
-
-        <thead class="bg-dark text-light">
-          <tr>
-            <th>Dia y Hora</th>
-            <th>Hna. Gascón<br>Acompañante</th>
-            <th>Hogar y<br> Detalles</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td data-title="Dia">Miercoles<br>1:15pm</td>
-            <td data-title="Acompañante Hno.">Hivian Suarez<br>(407) N/A</td>
-            <td><a class="button" href="#popup1">N/A</a></td>
-          </tr>
-
-          <tr>
-            <td data-title="Dia">Viernes<br>1:15pm</td>
-            <td data-title="Acompañante Hno.">Isabel Zulueta<br>(407) 545-1418</td>
-            <td><a class="button" href="#popup2">Aracelis</a></td>
-          </tr>
-
-        </tbody>
-      </table>
+    <div class="containera">
+      <h2>
+        Presione el botón verde para ver las visitas programadas<br>
+      </h2>
     </div>
 
-    <div id="popup1" class="overlay">
-      <div class="popup"><a class="close" href="#Tabla">&times;</a>
-        <h2>Domingo Rodríguez</h2>
-
-        <div class="content">
-          <p>
-            Dirección:<br>
-            5349 Moonglow Blvd<br>
-            Orlando, FL 32839<br>
-            Domingo: (407) 927-3986
-          </p>
-          <p>
-            El Hno. Rodríguez y su esposa se habían ofrecido la visita pasada par brindarle
-            alimentos a usted y su esposa. Lamentablemente esa misma semana su esposa enferma
-            y la siguiente semana murió.<br><br>
-            Cuenta con 81 años y a pesar de la perdida de su esposa, su eeda y sus problemas de
-            salud se ha mantenido fiel.
-          </p>
-          <p>
-            Objetivo: Animo y estimulo
-          </p>
-
+    <!-- Tabla -->
+    <div class="content1">
+      <div class="buttons-area">
+        <div class="inputfield">
+          <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID"
+            style=" display: none;padding: 3px;height: 40px;font-size: 20px;width: 100px;background-color:  #F5F5DC;color: #000;font-weight: bold;">
         </div>
+
+        <button type="button" class="buttonast" onclick="read_value($('#srchID').val())">
+          <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Vea las visitas programadas</span></i>
+        </button>
+      </div>
+
+      <div id="showData"></div>
+
+      <div id="loader"></div>
+      <p id="re"></p>
+
+      <div class="louder-area">
+        <div></div>
+        <div id="loader"></div>
+        <p id="re"></p>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-    <div id="popup2" class="overlay">
-      <div class="popup">
-        <h2>Aracelis </h2>
-        <a class="close" href="#Tabla">&times;</a>
-        <div class="content">
-          <!--<p>
-            Dirección:<br>
-            5467 Vineland Road,<br>
-            Orlando, FL 32811<br>
-          </p>-->
-        <p>
-          Detalles de la estudiante:<br><br>
-          Dirección: <br>6109 Walbridge St, <br>Orlando, Fl 32809 <br><br>
-          Publicación que estudia: Disfrute<br>
-          Lección: 12
-        </p>
-          <p>
-            Aracelis vive con sus hijos, esposo y su suegra.
-            Tiene alrededor de 40 años.
-          </p>
-          <p>
-            Dos de sus hijos tienen problemas de salud aun así hace un esfuerzo por
-            asistir a las reuniones. <br><br>A comenzado a hablarle de la biblia a
-            sus compañeros de trabajo.
-          </p>
-        </div>
-      </div>
-    </div>
+    <!-- Tabla -->
 
     <div class="containera">
       <h3>Cuerpo de ancianos: Gracias por aprovechar este medio digital de comunicación.</h3>
@@ -386,6 +260,26 @@
     });
   </script>
   <!-- required stellarnav-->
+
+    <!--WhatsApp-->
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwJqY-zAf28GgUE1aZN7QEZEZH5fA_-P0cpvRadLBm4p4ViWwrnhpKe2iGhpR-XSePB/exec'
+      const form = document.forms['google-sheet']
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+          .then(response => alert("Asistencia enviada exitosamente"))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!--WhatsApp-->
+
+
+    <script src="public/registro-pastoreo.js"></script>
 
 </body>
 
