@@ -7,12 +7,10 @@ function insert_value() {
 
 
   var Fecha = $("#Fecha").val();
-  var Acomodador = $("#Acomodador").val();
-  var Reunion = $("#Reunion").val();
-  var Asistencia = $("#Asistencia").val();
-  var Zoom = $("#Zoom").val();//////////////////
+  var Visita2 = $("#Visita2").val();
+  var Visita3 = $("#Visita3").val();//////////////////
 
-  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Acompañante=" + Acompañante + "&Reunion=" + Reunion + "&Asistencia=" + Asistencia + "&Zoom=" + Zoom + "&action=insert";
+  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Visita2=" + Visita2 + "&Visita3=" + Visita3 + "&action=insert";
 
   var request = jQuery.ajax({
     crossDomain: true,
@@ -29,12 +27,10 @@ function update_value() {
 
 
   var Fecha = $("#Fecha").val();
-  var Acompañante = $("#Acompañante").val();
-  var Reunion = $("#Reunion").val();
-  var Asistencia = $("#Asistencia").val();
-  var Zoom = $("#Zoom").val();//////////////////
+  var Visita2 = $("#Visita2").val();
+  var Visita3 = $("#Visita3").val();//////////////////
 
-  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Acompañante=" + Acompañante + "&Reunion=" + Reunion + "&Asistencia=" + Asistencia + "&Zoom=" + Zoom + "&action=insert";
+  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Visita2=" + Visita2 + "&Visita3=" + Visita3 + "&action=insert";
   var request = jQuery.ajax({
     crossDomain: true,
     url: url,
@@ -51,12 +47,10 @@ function delete_value() {
   $('#mySpinner').addClass('spinner');
 
   var Fecha = $("#Fecha").val();
-  var Acompañante = $("#Acompañante").val();
-  var Reunion = $("#Reunion").val();
-  var Asistencia = $("#Asistencia").val();
-  var Zoom = $("#Zoom").val();//////////////////
+  var Visita2 = $("#Visita2").val();
+  var Visita3 = $("#Visita3").val();//////////////////
 
-  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Acompañante=" + Acompañante + "&Reunion=" + Reunion + "&Asistencia=" + Asistencia + "&Zoom=" + Zoom + "&action=insert";
+  var url = script_url + "?callback=ctrlq&Fecha=" + Fecha + "&Visita2=" + Visita2 + "&Visita3=" + Visita3 + "&action=insert";
 
   var request = jQuery.ajax({
     crossDomain: true,
@@ -89,17 +83,14 @@ function read_value(srch) {
     var row = header.insertRow(0);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    var cell5 = row.insertCell(4);///////////////////
-    row.style.background = "#000000";
+    var cell3 = row.insertCell(2);///////////////////
+    row.style.background = "#006350b0";
+    row.style.color = "rgb(255, 255, 255";
 
 
-    cell1.innerHTML = "<b>Fecha</b>";
-    cell2.innerHTML = "<b>Acompañante</b>";
-    cell3.innerHTML = "<b>Reunion</b>";
-    cell4.innerHTML = "<b>Asistencia</b>";
-    cell5.innerHTML = "<b>Zoom</b>";//////////////////
+    cell1.innerHTML = "<b>Visita 1</b>";
+    cell2.innerHTML = "<b>Visita 2</b>";
+    cell3.innerHTML = "<b>Visita 3</b>";//////////////////
 
     //        alert(json.records);
     // masukkan data ke dalam tabel
@@ -109,15 +100,11 @@ function read_value(srch) {
         if (srch == json.records[i].ID) {
           tr = table.insertRow(-1);
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = json.records[i].Fecha;
+          tabCell.innerHTML = json.records[i].Visita1;
           tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = json.records[i].Acompañante;
+          tabCell.innerHTML = json.records[i].Visita2;
           tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = json.records[i].Reunion;
-          tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = json.records[i].Asistencia;
-          tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = json.records[i].Zoom;////////////////
+          tabCell.innerHTML = json.records[i].Visita3;////////////////
         }
       }
       $("#re").html("Datos de la Persona");
@@ -128,15 +115,11 @@ function read_value(srch) {
         tr = table.insertRow(-1);
         var tabCell = tr.insertCell(-1);
 
-        tabCell.innerHTML = json.records[i].Fecha;
+        tabCell.innerHTML = json.records[i].Visita1;
         tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = json.records[i].Acompañante;
+        tabCell.innerHTML = json.records[i].Visita2;
         tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = json.records[i].Reunion;
-        tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = json.records[i].Asistencia;
-        tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = json.records[i].Zoom;////////////////
+        tabCell.innerHTML = json.records[i].Visita3;////////////////
       }
     }
 
@@ -147,11 +130,9 @@ function read_value(srch) {
     $("#re").css("visibility", "visible");
 
 
-    $("#Fecha").val("")
-    $("#Acompañante").val("")
-    $("#Reunion").val("")
-    $("#Asistencia").val("")
-    $("#Zoom").val("")
+    $("#Visita1").val("")
+    $("#Visita2").val("")
+    $("#Visita3").val("")
     getData2Input();///////////////////
   });
 }
@@ -172,17 +153,13 @@ function getData2Input() {
 
 function tableText(tableRow) {
 
-  var Fecha = tableRow.childNodes[0].innerHTML;
-  var Acompañante = tableRow.childNodes[1].innerHTML;
-  var Reunion = tableRow.childNodes[2].innerHTML;
-  var Asistencia = tableRow.childNodes[3].innerHTML;
-  var Zoom = tableRow.childNodes[4].innerHTML;//////////
+  var Visita1 = tableRow.childNodes[0].innerHTML;
+  var Visita2 = tableRow.childNodes[1].innerHTML;
+  var Visita3 = tableRow.childNodes[2].innerHTML;//////////
 
-  $("#Fecha").val(Fecha)
-  $("#Acompañante").val(Acompañante)
-  $("#Reunion").val(Reunion)
-  $("#Asistencia").val(Asistencia)
-  $("#Zoom").val(Zoom)
+  $("#Visita1").val(Visita1)
+  $("#Visita2").val(Visita2)
+  $("#Visita3").val(Visita3)
 }
 
 
@@ -192,7 +169,7 @@ _gaq.push(['_setDomainName', 'jqueryscript.net']);
 _gaq.push(['_trackPageview']);
 
 var script_url =
-  "https://script.google.com/macros/s/AKfycbzMgzmxP0Gcz0kXmKa-qJabAG2fdDfv7laWr4FoqQk741JiO9sB3XN1R6VpzRE7LnsP/exec"; /////////////////
+  "https://script.google.com/macros/s/AKfycbyCn15CjCFEJtEoxFII8eAEvwCDBYuDNFDFXpOugLh78EUYDsGRUwnB7SH5a4GoUfJY/exec"; /////////////////
 
 (function () {
   var ga = document.createElement('script');
