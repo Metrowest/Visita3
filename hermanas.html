@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest Tools</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Tools app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+  <meta property="og:description"
+    content="Esta aplicacion provee algunas herramientas para los acomodadores, los siervos ministeriales y los ancianos.">
+  <meta property="og:title" content="Metrowest Tools">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons/og-image.jpg?raw=true">
+  <meta property="og:url" content="https://metrowest.github.io/Tools/">
+
+
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+
+  <!-- .stellarnav -->
+  <!--<div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp">
+          </i>Home</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación</a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp">
+          </i>Predicación</i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="eventos" class="img6 js-arrow" src="public/assets/img/familia4.webp">
+          </i>Eventos</a>
+        <ul>
+          <li><a href="conmemoracion.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/bg.webp"></i>Conmemoración</a>
+          </li>
+          <li>
+            <a href="circuito1.html">
+              <i><img title="android" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 16 de Septiembre 2023
+            </a>
+          </li>
+          <li>
+            <a href="circuito2.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 14 de Enero 2024
+            </a>
+          </li>
+          <li>
+            <a href="regional.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea3.webp"></i>
+              Asamblea Regional<br> 28 - 30 de julio de 2023
+            </a>
+          </li>
+          <li>
+            <a href="campana.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
+              Campaña <br> Mundial
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp">
+          </i>Recursos</a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Ancianos</a>
+      </li>
+      </li>
+    </ul>
+  </div>-->
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest Tools </a>
+    <h1>Trabajando Unidos Como Congregación</h1>
+    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
+    <h3> Y estemos pendientes unos de otros para motivarnos a mostrar amor y
+      a hacer buenas obras, 25 sin dejar de reunirnos... (Hebreos 10:24, 25).<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <h2 class="section-header" id="section-header">
+        <i><img class="img4" alt="" src="public/assets/img/Mujer 2.webp"></i>ESTUDIOS Y REVISITAS PROGRAMADAS<i>
+          <img class="img4" alt="" src="public/assets/img/Mujer 1.webp">
+        </i>
+      </h2>
+      <img src="public/assets/img/precursor.webp" alt="" class="imgLogo" />
+
+      <div class="containera">
+        <h2>
+          Presione el botón azul para ver las visitas programadas<br>
+        </h2>
+      </div>
+
+      <!-- Tabla -->
+      <div class="content1">
+        <div class="buttons-area">
+          <div class="inputfield">
+            <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID"
+              style=" display: none;padding: 3px;height: 40px;font-size: 20px;width: 100px;background-color:  #F5F5DC;color: #000;font-weight: bold;">
+          </div>
+
+          <button type="button" class="buttonast" onclick="read_value($('#srchID').val())">
+            <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Vea las visitas programadas</span></i>
+          </button>
+        </div>
+        <div id="loader"></div>
+        <p id="re"></p>
+        <div id="showData"></div>
+        <div class="louder-area">
+          <div></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+        </div>
+      </div>
+      <!-- Tabla -->
+
+      <!-- Detalles -->
+     <!-- <div class="content2">
+        <div class="inputs">
+          <input type="date" name="Fecha" id="Fecha" format="dddd dd MMMM">
+          <label>Fecha</label>
+        </div>
+        <div class="inputs">
+          <input type="text" name="Acompañante" id="Acompañante" required>
+          <label>Acompañante</label>
+        </div>
+        <select input id="Reunion" name="Reunion" class="form-check-input" type="radius"
+          onchange="this.className=this.options[this.selectedIndex].className">
+          <option class="flechas" selected="true">---Reunión---</option>
+          <option class="flechasRoja" value="Entre semana">Entre semana</option>
+          <option class="flechasVerde" value="Fin de semana">Fin de semana</option>
+        </select>
+        <div class="inputs">
+          <input type="number" name="Asistencia" id="Asistencia">
+          <label>Asistencia</label>
+        </div>
+        <div class="inputs">
+          <input type="number" name="Zoom" id="Zoom">
+          <label>Zoom</label>
+        </div>
+      </div>
+
+      <div class="content1" id="respuesta"></div>
+      <div class="content1">
+        <button type="submit" id="submit" class="formulario__submit">Enviar</button>
+      </div><br>-->
+      <!-- Detalles -->
+      <div class="content1">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+      </div>
+      <div class="content1">
+        <h2 class="titulo">Cuerpo de Ancianos, Metrowest<br> <span class="typed"></span></h2>
+      </div>
+
+      <!-- Top arow button on body -->
+      <div class="button">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+      <!-- Top arow button on body -->
+    </form>
+  </section>
+
+  <!--my scripts-->
+  <!--WhatsApp-->
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbzMgzmxP0Gcz0kXmKa-qJabAG2fdDfv7laWr4FoqQk741JiO9sB3XN1R6VpzRE7LnsP/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => alert("Asistencia enviada exitosamente"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!--WhatsApp-->
+
+
+  <script src="public/registro-asistencia.js"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+</body>
+
+</html>
