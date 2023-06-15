@@ -109,6 +109,58 @@ body {
     margin: 15px;
 }
 
+
+
+
+
+.content2 .inputs input {
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #005691;
+    outline: 0;
+    font-size: 20px;
+    transition: .3s;
+    background-color: #95fefe;
+    min-width: 275px;
+    width: 100%;
+}
+
+.content2 .inputs input:focus {
+    border-color: #14dcd2
+}
+
+.content2 .inputs label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 24px;
+    transition: .3s;
+    color: #ff0404;
+    padding-left: 5pt
+}
+
+.content2 .mb-3 label {
+    pointer-events: none;
+    font-size: 24px;
+    transition: .3s;
+    color: #0a9c1e;
+    padding-left: 5pt;
+    margin-left: 10px;
+}
+
+.content2 .inputs input:focus~label,
+.content2 .inputs input:valid~label {
+    transform: translateY(-28px);
+    color: #0a9c1e
+}
+
+
+
+
+
+
 .content3 {
     display: flex;
 }
@@ -388,16 +440,17 @@ table#myTable {
 }
 
 tr {
-    background-color: #936a41;
+    background-color: #7fd7b9;
+
 }
 
 table,
 td {
     padding: 2px 20px;
-    color: white;
+
     margin: 10px 0;
     border: solid 1px #fff;
-    min-width: 175px;
+    min-width: 150px;
     max-width: 300px;
     text-align: center;
 }
@@ -647,6 +700,18 @@ input[type="SUBMIT"] {
     }
 }
 
+/*--visitas hermanas--*/
+button.buttonast {
+    background: #006350b0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+}
 
 /*--articulo--*/
 .shop-item {
