@@ -14,14 +14,14 @@ body {
     height: auto;
     font-size: 16px;
     font-family: 'Exo 2', sans-serif;
-    background: #a0e8c6;
+    background: #58342085;
     color: rgb(0, 0, 0);
 }
 
 .header {
     text-align: center;
     color: white;
-    background: #006350b0;
+    background: #583420;
     ;
 }
 
@@ -286,7 +286,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: #fff;
-    background: linear-gradient(-135deg, #006350b0, #c5f0a8);
+    background: linear-gradient(-135deg, #583420, #a7958a);
     box-shadow: 0 0 3px 1px;
     border-radius: 20px;
     margin-right: auto;
@@ -309,7 +309,7 @@ img {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 #0e1a18;
-    background: linear-gradient(-135deg, #c5f0a8, #006350b0);
+    background: linear-gradient(-135deg, #a7958a, #583420);
 }
 
 p {
@@ -440,7 +440,7 @@ table#myTable {
 }
 
 tr {
-    background-color: #7fd7b9;
+    background-color: #ddc59885;
 
 }
 
@@ -657,13 +657,14 @@ input[type="SUBMIT"] {
 }
 
 #g9 {
-    background-color: #006350b0;
+    background-color: #a7958a;
 }
 
 #g9:hover {
-	background-color: #001eff; /* Color de fondo al pasar el cursor */
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	background-color: #583420; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.3);
 	transform: translateY(-5px);
+    color: #ffffff;
 }
 
 /*--recursos-video--*/
@@ -702,7 +703,7 @@ input[type="SUBMIT"] {
 
 /*--visitas hermanas--*/
 button.buttonast {
-    background: #006350b0;
+    background: #58342085;
     color: white;
     font-size: 25px;
     text-align: center;
@@ -711,6 +712,13 @@ button.buttonast {
     padding: 10px;
     font-weight: bold;
     border-radius: 15px;
+}
+
+button.buttonast:hover {
+	background-color: #583420; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.3);
+	transform: translateY(-5px);
+    color: #ffffff;
 }
 
 /*--articulo--*/
@@ -954,7 +962,7 @@ input#nombre {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    background-color: #006350b0;
+    background-color: #583420;
 }
 
 .button:hover {
@@ -1034,7 +1042,7 @@ input#nombre {
     bottom: 20px;
     right: 20px;
     color: #fff;
-    background: #006350b0;
+    background: #583420;
     padding: 7px 12px;
     font-size: 18px;
     border-radius: 6px;
@@ -1042,9 +1050,10 @@ input#nombre {
 }
 
 .button a:hover {
-	background-color: #a52c2c; /* Color de fondo al pasar el cursor */
+	background-color: #000000; /* Color de fondo al pasar el cursor */
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-	transform: translateY(-20px);
+	transform: translateY(-10px);
+    color: #ffffff;
 }
 
 
@@ -1064,7 +1073,7 @@ iframe {
 	color: #ffffff; /* Color del texto */
 	border-radius: 6px; /* Borde del boton */
 	letter-spacing: 2px; /* Espacio entre letras */
-	background-color: #006350b0; /* Color de fondo */
+	background-color: #583420; /* Color de fondo */
 	padding: 10px; /* Relleno del boton */
 	position: fixed;
 	bottom: 20px;
@@ -1074,9 +1083,10 @@ iframe {
 	z-index: 99;
 }
 .btn-flotante:hover {
-	background-color: #a52c2c; /* Color de fondo al pasar el cursor */
+	background-color: #000000; /* Color de fondo al pasar el cursor */
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
+    color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
  	.btn-flotante {
