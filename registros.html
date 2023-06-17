@@ -23,8 +23,9 @@
   <meta property="og:image:height" content="279">
   <meta property="og:title" content="Metrowest | Visita">
   <meta property="og:description" content="Registros de la congregación">
-  <meta property="og:url" content="https://metrowest.github.io/Visita/registros.html">
-  <meta property="og:image1" content="https://raw.githubusercontent.com/Metrowest/Visita/main/public/assets/icons/og-image1.jpg">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Visita/">
 
   <!-- Imports an icon to represent the document. -->
   <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
@@ -113,8 +114,8 @@
 
       <img title="logo" src="public/assets/img/pastoreo55.webp" class="imgLogo2" />
 
-      <h3>Solo hemos hecho lo que teníamos que hacer <a
-          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+      <h3>Solo hemos hecho lo que teníamos que hacer <a href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10"
+          target="_blank">(Luc. 17:10)</a>.</h3>
 
     </div>
     <div class="containera">
@@ -213,7 +214,8 @@
         </div>
 
         <button type="button" class="buttonast" onclick="read_value($('#srchID').val())">
-          <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Vea las visitas programadas</span></i>
+          <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Vea las visitas
+              programadas</span></i>
         </button>
       </div>
 
@@ -259,25 +261,25 @@
   </script>
   <!-- required stellarnav-->
 
-    <!--WhatsApp-->
-    <script>
-      const scriptURL =
-        'https://script.google.com/macros/s/AKfycbwJqY-zAf28GgUE1aZN7QEZEZH5fA_-P0cpvRadLBm4p4ViWwrnhpKe2iGhpR-XSePB/exec'
-      const form = document.forms['google-sheet']
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
-          .then(response => alert("Asistencia enviada exitosamente"))
-          .catch(error => console.error('Error!', error.message))
+  <!--WhatsApp-->
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwJqY-zAf28GgUE1aZN7QEZEZH5fA_-P0cpvRadLBm4p4ViWwrnhpKe2iGhpR-XSePB/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
       })
-    </script>
-    <!--WhatsApp-->
+        .then(response => alert("Asistencia enviada exitosamente"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!--WhatsApp-->
 
 
-    <script src="public/registro-pastoreo.js"></script>
+  <script src="public/registro-pastoreo.js"></script>
 
 </body>
 
