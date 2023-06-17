@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest | Visita</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Esto es una aplicacion de Metrowest" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Visita" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Registros de la congregación">
+  <meta property="og:title" content="Metrowest Spanish">
+  <meta property="og:url" content="https://metrowest.github.io/Visita/">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/Visita/main/public/assets/icons/og-image.jpg">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Metrowest | Visita">
+  <meta name="application-name" content="Metrowest | Visita">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <!--
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li>
+        <a href="desastre.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+          Plan Ante Un<br>Desastre Natural
+        </a>
+      </li>
+      <li>
+        <a href="salon.html">
+          <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+          Plan De Seguridad<br>Del Salón Del Reino
+        </a>
+      </li>
+      <li><a href="contactos.html"><i><img title="contactos" class="img6"
+              src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>-->
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest Spanish</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>ARREGLOS PARA LA VISITA<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <div class="containera">
+
+      <img title="logo" src="public/assets/img/pastoreo55.webp" class="imgLogo2" />
+
+      <h3>Solo hemos hecho lo que teníamos que hacer <a
+          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+
+    </div>
+    <div class="containera">
+      <h2>Informes y Programas
+      </h2>
+    </div>
+    <div class="buttons-area">
+
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1c5fnZp6Ic1eaFr661oE4nayPFa7PAw9H?usp=sharing', '_blank');">
+        <img title="biblia2" class="img2" src="public/assets/img/biblia2.webp">Ultima visita
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1H0Rz5WT4j8Yq3v7HEbayFxkd7oKANNc7?usp=sharing', '_blank');">
+        <img title="lupa" class="img2" src="public/assets/img/lupa.webp">Programas
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1W_srUYLtQgH0TC-PQKf2ZkpD3Ht96pMg?usp=sharing', '_blank');">
+        <img title="precursor5" class="img2" src="public/assets/img/precursor5.png">Predicación
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1NrM__kZzQ7g42pmWZJIR0m48GpFpul_T?usp=sharing', '_blank');">
+        <img title="cuentas" class="img2" src="public/assets/img/cuentas.webp">Cuentas
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1uXCvDXpOlpdmEifqmNGVRdFXlsBRkWCt?usp=sharing', '_blank');">
+        <img title="libros" class="img2" src="public/assets/img/libros.webp">Literatura
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1gvPjCAWlWxRIvn7v2awVrRYBwcRbvH2N?usp=sharing', '_blank');">
+        <img title="libros" class="img2" src="public/assets/img/registros2.webp">Territorios<br>Disponible<br>
+      </button>
+    </div><br>
+
+    <div class="containera">
+      <h2>Recomendaciones
+      </h2>
+    </div>
+
+    <div class="buttons-area">
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1Kt0kL1O4C8s9jozwEFT9RQl6CSMLiu3Z?usp=sharing', '_blank');">
+        <img title="header1" class="img2" src="public/assets/img/header1.webp">Ancianos
+      </button>
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1nwG80aMWMu8x4QnujEBFxgwXQtqaYM6A?usp=sharing', '_blank');">
+        <img title="acomodador2" class="img2" src="public/assets/img/acomodador2.webp">Ministeriales
+      </button>
+    </div><br>
+
+    <div class="containera">
+      <h2>Otros asuntos
+      </h2>
+    </div>
+    <div class="buttons-area">
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/drive/folders/1fW_1h5APZmwYXvvqGhhdBzRm4Y4B_OhM?usp=sharing', '_blank');">
+        <img title="header1" class="img2" src="public/assets/img/file.webp">Datos
+      </button>
+    </div><br>
+
+    <div class="containera">
+      <h2>Seguridad y Protección
+      </h2>
+    </div>
+    <div class="buttons-area">
+      <button class="button1" id="g9"
+        onclick="window.open('https://drive.google.com/file/d/12iTfYkUyZwxk5oha251a5RZj_wQEpXlX/view?usp=sharing', '_blank');">
+        <img title="libros" class="img2" src="public/assets/img/seguridad1.webp">Plan de<br>Seguridad<br>
+      </button>
+      <button class="button1" id="g9" onclick="window.location.href = 'desastre.html';">
+        <img title="libros" class="img2" src="public/assets/img/tormenta1.webp">Plan ante<br>Desastres<br>
+      </button>
+      <button class="button1" id="g9" onclick="window.location.href = 'contactos.html';">
+        <img title="libros" class="img2" src="public/assets/img/Emergency.webp">Contactos<br>Emergencia<br>
+      </button>
+    </div><br><br>
+
+    <P1 id="Tabla"></P1>
+    <img title="logolarge" src="public/assets/img/Pastoreo2.webp" class="imgLogo2" />
+    <h2>Pastoreo
+    </h2>
+
+    <div class="containera">
+      <h2>
+        Presione el botón verde para ver las visitas programadas<br>
+      </h2>
+    </div>
+
+    <!-- Tabla -->
+    <div class="content1">
+      <div class="buttons-area">
+        <div class="inputfield">
+          <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID"
+            style=" display: none;padding: 3px;height: 40px;font-size: 20px;width: 100px;background-color:  #F5F5DC;color: #000;font-weight: bold;">
+        </div>
+
+        <button type="button" class="buttonast" onclick="read_value($('#srchID').val())">
+          <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Vea las visitas programadas</span></i>
+        </button>
+      </div>
+
+      <div id="showData"></div>
+
+      <div id="loader"></div>
+      <p id="re"></p>
+
+      <div class="louder-area">
+        <div></div>
+        <div id="loader"></div>
+        <p id="re"></p>
+      </div>
+    </div>
+    <!-- Tabla -->
+
+    <div class="containera">
+      <h3>Cuerpo de ancianos: Gracias por aprovechar este medio digital de comunicación.</h3>
+      <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    </div>
+
+    <!-- Top arow button on body -->
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Top arow button on body -->
+
+  </section>
+
+  <!--my scripts-->
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+    <!--WhatsApp-->
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwJqY-zAf28GgUE1aZN7QEZEZH5fA_-P0cpvRadLBm4p4ViWwrnhpKe2iGhpR-XSePB/exec'
+      const form = document.forms['google-sheet']
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+          .then(response => alert("Asistencia enviada exitosamente"))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!--WhatsApp-->
+
+
+    <script src="public/registro-pastoreo.js"></script>
+
+</body>
+
+</html>
