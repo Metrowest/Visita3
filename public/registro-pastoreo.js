@@ -84,7 +84,7 @@ function read_value(srch) {
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);///////////////////
-    row.style.background = "#006350b0";
+    row.style.background = "#583420";
     row.style.color = "rgb(255, 255, 255";
 
 
