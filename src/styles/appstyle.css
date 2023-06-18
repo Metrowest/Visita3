@@ -612,6 +612,66 @@ input[type="SUBMIT"] {
     border-bottom: 2px solid #002e25b0
 }
 
+/*--Tabla Google--*/
+.google-visualization-table-tr-even,
+.google-visualization-table-tr-even td,
+.google-visualization-table-tr-even-nonstrict {
+    color: #333 !important;
+    background-color: #fff3e8;
+}
+
+.google-visualization-table-tr-odd,
+.google-visualization-table-tr-odd td,
+.google-visualization-table-tr-odd-nonstrict {
+    background-color: #ffe2c6  !important;
+    color: #333 !important;
+}
+
+.google-visualization-table-tr-sel,
+.google-visualization-table-tr-sel td,
+.google-visualization-table-tr-sel-nonstrict {
+    background-color: #583420 !important;
+    color: #fff !important;
+}
+
+.google-visualization-table-tr-over,
+.google-visualization-table-tr-over td,
+.google-visualization-table-tr-over-nonstrict {
+    background-color: #583420 !important;
+    color: #fff !important;
+}
+
+.google-visualization-table-td,
+.google-visualization-table-th {
+    border: 1px solid #583420 !important;
+    color: #fff !important;
+}
+
+.google-visualization-table-tr-head,
+.google-visualization-table-tr-head td,
+.google-visualization-table-tr-head-nonstrict {
+    background-color: #583420 !important;
+    background-image: none !important;
+    color: #333 !important;
+}
+
+.google-visualization-table .gradient {
+    background-image: none !important;
+}
+
+.google-visualization-table {
+    display: block !important;
+}
+
+.google-visualization-table-table {
+    margin: 0 auto !important;
+    border-collapse: collapse !important;
+    font-size: medium !important;
+}
+
+.google-visualization-table-table td {
+    padding: 4px .35em !important;
+}
 
 /*--territorio--*/
 .buttons-area {
