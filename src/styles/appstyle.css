@@ -643,7 +643,7 @@ input[type="SUBMIT"] {
 
 .google-visualization-table-td,
 .google-visualization-table-th {
-    border: 1px solid #583420 !important;
+    border: 2px solid #ffffff !important;
     color: #fff !important;
 }
 
@@ -666,7 +666,7 @@ input[type="SUBMIT"] {
 .google-visualization-table-table {
     margin: 0 auto !important;
     border-collapse: collapse !important;
-    font-size: medium !important;
+    font-size: 16px !important;
 }
 
 .google-visualization-table-table td {
